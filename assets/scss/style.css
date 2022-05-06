@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-y: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1c6de8), to(#250b82));
+  background-image: linear-gradient(to top, #1c6de8 0%, #250b82 100%);
+}
+
+body .night {
+  width: 70vw;
+  height: 80vh;
+  margin: 5rem auto;
+  background: url("../img/Img_1.png");
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+}
+
+body .night .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .night .buttons button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c42bea), to(#4617ee));
+  background: linear-gradient(to top, #c42bea 0%, #4617ee 100%);
+  color: #2b2b2b;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+body .night .surface {
+  width: 500%;
+  height: 140px;
+  background: url("../img/Img_02.png");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+
+body .night .car {
+  position: absolute;
+  bottom: 10%;
+  left: 24%;
+}
+
+@-webkit-keyframes moveRight {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@keyframes moveRight {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@-webkit-keyframes move {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  50% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  0% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+
+@keyframes move {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  50% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  0% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
